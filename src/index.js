@@ -27,17 +27,6 @@ const store = createStore(
   )
 );
 
-//const middlewares = [thunk.withExtraArgument({ getFirestore })];
-
-/* const store = createStore(
-  rootReducer,
-  {},
-  compose(
-    applyMiddleware(...middlewares),
-    reduxFirestore(fbConfig)
-  )
-); */
-
 const rrfConfig = {
   userProfile: "users",
   useFirestoreForProfile: true // Firestore for Profile instead of Realtime DB
